@@ -1,4 +1,4 @@
-#lang racket
+;#lang racket
 
 (include "q2.rkt")
 
@@ -45,4 +45,4 @@
   (evalPostfix postfix '())
  )
 
-(display (evalPostfixExpr (infixToPostfix '(1 #\+ 2 #\* 5 #\- 4 #\* 2)))) (newline)
+;(display (evalPostfixExpr (infixToPostfix '(1 #\+ 2 #\* 50 #\- 4 #\* 2)))) (newline)

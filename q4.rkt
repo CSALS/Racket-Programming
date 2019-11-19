@@ -1,4 +1,4 @@
-#lang racket
+;#lang racket
 
 ; Merge Sort -> takes T(N) time
 (define (mergesort array)
@@ -48,4 +48,4 @@
     )
 )
 
-(display (mergesort '(2 3 1 5 4))) (newline)
+;(display (mergesort '(5 1 6 70 3 -2))) (newline)

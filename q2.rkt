@@ -4,7 +4,7 @@
         (append postfix operators) ;postfix+operators is final postfix expression
         (if (number? (first infix))
             (helper (rest infix) operators (append postfix (list (first infix))))
-            (cond 
+            (cond
                 ((or (char=? #\+ (first infix)) (char=? #\- (first infix)))
                     (helper (rest infix) (list (first infix)) (append postfix operators))
                 )
@@ -20,4 +20,4 @@
     (helper infix '() '())
 )
 
-;(display (infixToPostfix '(1 #\+ 2 #\* 3 #\* 4 #\- 5))) (newline)
+;(display (infixToPostfix '(1 #\+ 2 #\* 3 #\- 4 #\- 5))) (newline)
